@@ -1,13 +1,14 @@
 # This only works with three-digits numbers
 what = input ("Enter a three- or four-digit number: ")
+what = int(what)
 
-if int(what) > 99 and int(what) < 1000:
+if what > 99 and what < 1000:
 
     print("starting check for three digits")
-    a = int(what)%10
+    a = what%10
 
 
-    b = int(what)/10
+    b = what/10
 
     c = int(b)%10
     d = int(b)/10
@@ -21,13 +22,13 @@ if int(what) > 99 and int(what) < 1000:
         print("The number you entered is not a palindrome")
 
 
-if int(what) >= 1000 and int(what) <10000:
+elif what >= 1000 and what <10000:
 
     
-    a = int(what)%10
+    a = what%10
 
 
-    b = int(what)/10
+    b = what/10
 
     c = int(b)%10
     d = int(b)/10
