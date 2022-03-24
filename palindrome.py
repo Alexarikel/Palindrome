@@ -1,3 +1,4 @@
+# This only works with three-digits numbers
 what = input ("Enter a three-digit number: ")
 
 a = int(what)%10
