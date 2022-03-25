@@ -4,18 +4,15 @@ what = int(what)
 
 if what > 99 and what < 1000:
 
-    print("starting check for three digits")
+    
     a = what%10
 
 
-    b = what/10
-
-    c = int(b)%10
-    d = int(b)/10
+    b = what/100
 
    
 
-    if a == int(d):
+    if a == int(b):
         print("The number you entered is a palindrome")
 
     else:
