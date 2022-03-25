@@ -5,14 +5,9 @@ what = int(what)
 if what > 99 and what < 1000:
 
     
-    a = what%10
 
+    if what%10 == int(what/100):
 
-    b = what/100
-
-   
-
-    if a == int(b):
         print("The number you entered is a palindrome")
 
     else:
